@@ -188,8 +188,14 @@ function changeLegend(){
 			var t = setTimeout("changeLegend()",10);
 		}
 		else{
-			dojo.query('.esriLegendLayerLabel').forEach(function(node){
+			dojo.query('#legend0_World_Major_Lakes_8457').forEach(function(node){
 				dojo.style(node,"display","none")
+			});
+            dojo.query('#legend2_World_Major_Lakes_4023').forEach(function(node){
+    			dojo.style(node,"display","none")
+			});
+            dojo.query('#legend1_World_Major_Lakes_7125').forEach(function(node){
+    			dojo.style(node,"display","none")
 			});
 		}
 	}
